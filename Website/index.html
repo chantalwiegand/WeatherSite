@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="header">
+        <h1>Today's weather <span id="date"></span> at <span id="time"></span> UTC</h1>
+        <div class="form__group field">
+            <input type="text" id="city" class="form__field">
+            <label for="name" class="form__label">Search your own city</label>
+        </div>
+        <button class="button-52" type="button" id="myBtn">Search </button>
+    </div>
+
+
+    <div class="data">
+        <h2 class="box">Current weather for <span id="location"></span></h2>
+        <h2 class="box">Temperature: <span id="temp"></span> &#8451;</h2>
+        <h2 class="box">Wind speed: <span id="wind"></span> km/h</h2>
+        <h2 class="box">Sky conditions: <span id="sky"></span></h2>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="weather.js"></script>
+</body>
+
+</html>

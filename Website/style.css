@@ -1,0 +1,87 @@
+body {
+    /* background-color: wheat; */
+    background: url('img/background.jpg') no-repeat 100%;
+    font-family: 'Lora', serif;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.data {
+    margin: 0 0 0 10vw;
+}
+
+.box {
+    border: 3px solid black;
+    margin-right: 60vw;
+    padding: 10px;
+    background-color: beige;
+}
+
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin: 10px 10vw;
+}
+
+.form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 3px solid black;
+    outline: 0;
+    font-size: 1.3rem;
+    color: black;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: black;
+}
+
+.button-52 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 3px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:after {
+  content: "";
+  background-color: beige;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
